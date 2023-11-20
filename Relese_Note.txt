@@ -1,0 +1,21 @@
+Enhancement :
+
+- enhancements for kaa failover recovery
+- for handling and sending kaa requests sequentially to web portal
+- resolution of kaa assertion after kaa recovery
+- resolution to store message in next bucket if current bucket has not enough space available
+
+Fixed Policy :
+
+- bucket size 2048
+- log count in one bucket - 1
+- connection success and lost callback
+- 50 log storage in Kaa sdk
+- 1 log upload at a time
+- upload log on count 1
+- log delivery time out set to 90 second
+
+Enhancement :
+
+- Fixed location /data/keys in rootfs for kaa keys
+  added changes in SDK to detect keys from that directory
